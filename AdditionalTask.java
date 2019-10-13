@@ -16,7 +16,6 @@ public class AdditionalTask {
             System.out.println(countProgrammer[2] + " " + endingWord[2]);
             break;
         }
-
         System.out.println("Применился " + options + " кейс");
     }
 
