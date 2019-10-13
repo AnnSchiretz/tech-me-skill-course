@@ -1,5 +1,3 @@
-import java.io.*;
-
 public class NumberOfDigitsInVariable {
     public static void main(String[] args) {
         int myNum = 12;
