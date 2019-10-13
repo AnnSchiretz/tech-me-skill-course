@@ -1,17 +1,18 @@
 public class PositiveNumber {
     public static void main(String[] agrs) {
-        int firstNumber = 75;
-        int secondNumber = -45;
-        int thirdNumber = 77;
+        int numbers[] = { 67, 99, -5 };
+        int positiveNum = 0;
 
-        if (firstNumber > 0) {
-            System.out.println(firstNumber);
+
+        if (numbers[0] > 0) {
+            positiveNum++;
         }
-        if (secondNumber > 0) {
-            System.out.println(secondNumber);
+        if (numbers[1] > 0) {
+            positiveNum++;
         }
-        if (thirdNumber > 0) {
-            System.out.println(thirdNumber);
+        if (numbers[2] > 0) {
+           positiveNum++;
         }
+        System.out.println(positiveNum);
     }
 }

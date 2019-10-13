@@ -1,4 +1,4 @@
-public class Triangle {
+public class Trigon {
 
     public static void main(String[] args) {
         int sideA = 25;
@@ -9,9 +9,9 @@ public class Triangle {
         int totalCA = sideC + sideA;
 
         if (sideA < totalAB || sideB < totalBC || sideC < totalCA) {
-            System.out.println("It`s triangel!");
+            System.out.println("It`s trigon!");
         } else {
-            System.out.println("Something goes wrong!");
+            System.out.println("Something went wrong!");
         }
     }
 

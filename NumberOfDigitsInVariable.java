@@ -1,6 +1,9 @@
+import java.io.*;
+
 public class NumberOfDigitsInVariable {
     public static void main(String[] args) {
-        byte myNum = -122;
+        int myNum = 123;
+
         if (myNum < -1) {
             System.out.println("My number negative");
         } else if (myNum >= 0) {
@@ -8,17 +11,14 @@ public class NumberOfDigitsInVariable {
         } else {
             System.out.println("BUGS IN MY CODE!");
         }
-        byte numeral = 2;
-        numeralInMyNumber(numeral, myNum);
-
-    }
-
-    public static void numeralInMyNumber(byte numeral, byte myNum) {
-        if (numeral >= 1) {
-            System.out.println("This is my number :" + myNum);
-        } else {
-            System.out.println("This is not my number!");
+        String myDigit = Integer.toString (myNum);
+        System.out.println(myDigit.length());
+        if (myDigit.length() <= 2 ){
+            System.out.println("My number two digit or simple ");
+        } else if (myDigit.length() >= 3) {
+            System.out.println("My number three digit or more");
         }
-    }
+        System.out.println("My number: " + myNum);
 
+    }
 }

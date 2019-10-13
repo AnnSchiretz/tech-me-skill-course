@@ -1,11 +1,11 @@
 public class LargerNumber {
     public static void main(String[] args) {
-        byte x = 67;
-        byte u = 88;
-        if (x > u) {
-            System.out.println("This number" + " " + x + " " + "more bigger");
-        } else if (u > x) {
-            System.out.println("This number" + " " + u + " " + "more bigger");
+        byte number1 = 67;
+        byte number2 = 88;
+        if (number1 > number2 ) {
+            System.out.println("This number " + number1 + " more bigger");
+        } else if (number2 > number1 ) {
+            System.out.println("This number " + number2 + " more bigger");
         } else {
             System.out.println("The numbers are equal");
         }
