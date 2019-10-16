@@ -1,5 +1,5 @@
 public class DayWeek {
-    
+
     public static void main(String[] args) {
         int daysWeek[] = {1, 2, 3, 4, 5, 6, 7};
         int day = 3;
@@ -30,6 +30,5 @@ public class DayWeek {
                 System.out.println("You have entered the wrong day of the week!");
                 break;
         }
-
     }
 }
