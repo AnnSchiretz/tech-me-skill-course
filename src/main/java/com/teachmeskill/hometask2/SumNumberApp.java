@@ -1,4 +1,4 @@
-public class Compute {
+public class SumNumberApp {
     public static void main(String[] args) {
         int sum = getSum(256);
         int nextSum = getSum(512);

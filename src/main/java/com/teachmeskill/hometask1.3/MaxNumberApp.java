@@ -1,4 +1,4 @@
-public class NumberMax {
+public class MaxNumberApp {
     public static void main(String[] args) {
         int num1 = 123;
         int num2 = 154;

@@ -1,4 +1,4 @@
-public class EvenNumber {
+public class EvenNumberApp {
     public static void main(String[] args) {
         int num = 1;
         do {
@@ -8,6 +8,5 @@ public class EvenNumber {
                 continue;
             }
         } while (num <= 100);
-
     }
 }

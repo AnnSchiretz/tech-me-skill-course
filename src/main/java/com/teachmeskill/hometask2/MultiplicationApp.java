@@ -1,4 +1,4 @@
-public class MultiplicationThisoutMultiplication {
+public class MultiplicationApp {
     public static void main(String[] args) {
         int a = 16;
         int b = 55;

@@ -1,4 +1,4 @@
-public class AbsoluteNumber {
+public class AbsoluteNumberApp {
     public static void main(String[] args) {
         int num1 = 0;
         int num2 = -1;

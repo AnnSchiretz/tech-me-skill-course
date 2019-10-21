@@ -1,4 +1,4 @@
-public class NumberMin {
+public class MinNumberApp {
     public static void main(String[] args) {
         int num1 = 56;
         int num2 = 76;
