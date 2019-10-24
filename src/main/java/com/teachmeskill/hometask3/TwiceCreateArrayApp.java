@@ -7,35 +7,43 @@ public class TwiceCreateArrayApp {
         String newLine = System.getProperty("line.separator");
         int[] myArray = getFilledArray();
         int[] mySecondArray = getFilledArray();
-        int sumFirstArray = Arrays.stream(myArray).sum();
-        int sumSecondArray = Arrays.stream(mySecondArray).sum();
+
+        int sumFirstArray = getSumArray(myArray);
+        int sumSecondArray = getSumArray(mySecondArray);
         double averageValue = getAverageValue(myArray, sumFirstArray);
         double secondAverageValue = getAverageValue(mySecondArray, sumSecondArray);
-
         System.out.print(newLine);
         System.out.print(sumFirstArray);
         System.out.print(newLine);
-        System.out.print(averageValue);
-        System.out.println(newLine);
         System.out.print(sumSecondArray);
+        System.out.print(newLine);
+        System.out.print(averageValue);
         System.out.print(newLine);
         System.out.print(secondAverageValue);
         System.out.print(newLine);
 
-        if (sumFirstArray > sumSecondArray){
+        if (sumFirstArray > sumSecondArray) {
             System.out.println("среднеарифметическое первого массива больше, чем второго");
-        } else if(sumFirstArray < sumSecondArray) {
+        } else if (sumFirstArray < sumSecondArray) {
             System.out.println("среднеарифметическое значение второго массива больше, чем первого");
         } else {
             System.out.println("возможно, они равны");
         }
     }
 
+    private static int getSumArray(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum = sum + array[i];
+        }
+        return sum;
+    }
+
     private static double getAverageValue(int[] array, int sum) {
         double averageValue = 0;
 
         for (int i = 0; i < array.length; i++) {
-            averageValue = sum / array.length;
+            averageValue = (double) sum / array.length;
         }
         return averageValue;
     }
