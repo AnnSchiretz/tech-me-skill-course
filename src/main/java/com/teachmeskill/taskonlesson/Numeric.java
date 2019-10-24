@@ -1,4 +1,4 @@
-public class Number {
+public class Numeric {
     public static void main (String[] args){
         int num = 0 ;
         do {
@@ -7,9 +7,6 @@ public class Number {
                 System.out.println(num);
                 break;
             }
-
         } while (num <=5);
-
     }
-
 }
