@@ -9,6 +9,16 @@ public class CarSpecification {
     public int price;
     public int registrationNumber;
 
+    public CarSpecification(int id, String mark, String model, int yearOfCarManufacture, String color, int price, int registrationNumber) {
+        this.id = id;
+        this.mark = mark;
+        this.model = model;
+        this.yearOfCarManufacture = yearOfCarManufacture;
+        this.color = color;
+        this.price = price;
+        this.registrationNumber = registrationNumber;
+    }
+
     @Override
     public String toString() {
         return "CarSpecification{" +
@@ -20,15 +30,5 @@ public class CarSpecification {
                 ", price=" + price +
                 ", registrationNumber=" + registrationNumber +
                 '}';
-    }
-
-    public CarSpecification(int id, String mark, String model, int yearOfCarManufacture, String color, int price, int registrationNumber) {
-        this.id = id;
-        this.mark = mark;
-        this.model = model;
-        this.yearOfCarManufacture = yearOfCarManufacture;
-        this.color = color;
-        this.price = price;
-        this.registrationNumber = registrationNumber;
     }
 }

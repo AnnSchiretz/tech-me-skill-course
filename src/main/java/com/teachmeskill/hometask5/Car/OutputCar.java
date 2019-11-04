@@ -1,6 +1,6 @@
 package com.teachmeskill.hometask5.Car;
 
-public class outputCar {
+public class OutputCar {
     public static void sortMarkCar(CarSpecification[] Car, String mark) {
         for (int i = 0; i < Car.length; i++) {
             if (Car[i].mark == mark) {

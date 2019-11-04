@@ -1,5 +1,4 @@
 package com.teachmeskill.hometask5.Car;
-import java.util.Arrays;
 
 public class OurCar {
 
@@ -7,14 +6,14 @@ public class OurCar {
         CarSpecification[] Car = new CarSpecification[8];
         createCar(Car);
         String disareMark = "Audi";
-        outputCar.sortMarkCar(Car, disareMark);
+        OutputCar.sortMarkCar(Car, disareMark);
         String disareModel = "A1";
-        outputCar.sortModelCar(Car, disareModel);
+        OutputCar.sortModelCar(Car, disareModel);
         int operatingTime = 7;
-        outputCar.findOperatingTimeCar(Car, operatingTime);
+        OutputCar.findOperatingTimeCar(Car, operatingTime);
         int relaseDate = 2015;
         int carPrice = 7000;
-        outputCar.findDateOfIssue(Car, relaseDate,carPrice);
+        OutputCar.findDateOfIssue(Car, relaseDate,carPrice);
         for (int i = 0; i < Car.length; i ++){
             System.out.println(Car[2]);
         }
@@ -28,7 +27,5 @@ public class OurCar {
         Car[5] = new CarSpecification(6, "Chevrolet", "Camaro", 2017, "green", 24300, 898821);
         Car[6] = new CarSpecification(7, "Opel", "Vectra", 2012, "brown", 9000, 8734834);
         Car[7] = new CarSpecification(5, "Audi", "A3", 2009, "orange", 10000, 52602);
-
     }
-
 }
