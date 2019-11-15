@@ -1,18 +1,44 @@
 package com.teachmeskill.hometask6.Transport;
 
+import java.util.Objects;
+
 class PassengerTransport extends GroundTransport {
     private String typeBody;
     private int amountPassenger;
 
     public PassengerTransport(){
 
-    };
+    }
+
 
     public PassengerTransport(float power, int maxSpeed, float weight, String mark, int amountWheells, float fuelConsumption, String typeBody, int amountPassenger) {
         super(power, maxSpeed, weight, mark, amountWheells, fuelConsumption);
         this.typeBody = typeBody;
         this.amountPassenger = amountPassenger;
     }
+
+    @Override
+    public String toString() {
+        return "PassengerTransport{" +
+                "typeBody='" + typeBody + '\'' +
+                ", amountPassenger=" + amountPassenger +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PassengerTransport that = (PassengerTransport) o;
+        return amountPassenger == that.amountPassenger &&
+                Objects.equals(typeBody, that.typeBody);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(typeBody, amountPassenger);
+    }
+
     public String getTypeBody() {
         return typeBody;
     }

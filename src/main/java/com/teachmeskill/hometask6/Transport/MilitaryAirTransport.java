@@ -1,18 +1,43 @@
 package com.teachmeskill.hometask6.Transport;
 
+import java.util.Objects;
+
 class MilitaryAirTransport extends AirTransport {
     private boolean catapultSystem;
     private int amountRocket;
 
     public MilitaryAirTransport(){
 
-    };
+    }
     public MilitaryAirTransport(float power, int maxSpeed, float weight, String mark, int wingspan, int minRunwayLength,
                                 boolean catapultSystem, int amountRocket) {
         super(power, maxSpeed, weight, mark, wingspan, minRunwayLength);
         this.catapultSystem = catapultSystem;
         this.amountRocket = amountRocket;
     }
+
+    @Override
+    public String toString() {
+        return "MilitaryAirTransport{" +
+                "catapultSystem=" + catapultSystem +
+                ", amountRocket=" + amountRocket +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MilitaryAirTransport that = (MilitaryAirTransport) o;
+        return catapultSystem == that.catapultSystem &&
+                amountRocket == that.amountRocket;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(catapultSystem, amountRocket);
+    }
+
     public boolean isCatapultSystem() {
         return catapultSystem;
     }
