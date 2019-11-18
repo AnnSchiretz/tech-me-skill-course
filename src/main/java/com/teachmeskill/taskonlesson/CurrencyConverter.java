@@ -1,6 +1,6 @@
 package com.teachmeskill.taskonlesson;
 
-public interface ConvertedCurrency {
+public interface CurrencyConverter {
 
     double getConverterCurrency (int myCurrency);
 

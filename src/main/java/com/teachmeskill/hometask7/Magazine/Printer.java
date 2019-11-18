@@ -1,6 +1,6 @@
 package com.teachmeskill.hometask7.Magazine;
 
-public interface Printout {
+public interface Printer {
 
     void print();
 }

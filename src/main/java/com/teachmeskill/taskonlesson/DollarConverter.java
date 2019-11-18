@@ -1,6 +1,6 @@
 package com.teachmeskill.taskonlesson;
 
-public class DollarConverter implements ConvertedCurrency {
+public class DollarConverter implements CurrencyConverter {
 
     @Override
     public double getConverterCurrency(int myCurrency) {

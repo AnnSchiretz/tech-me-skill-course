@@ -2,7 +2,7 @@ package com.teachmeskill.hometask7.Magazine;
 
 import java.util.Arrays;
 
-public class Magazine implements Printout {
+public class Magazine implements Printer {
 
     String name;
 
@@ -36,7 +36,7 @@ public class Magazine implements Printout {
 //        }
 //    }
 
-    static void printMagazine (Printout[] array){
+    static void printMagazine (Printer[] array){
         Arrays.stream(array)
                 .filter(cell -> cell instanceof Magazine)
                 .forEach(cell -> System.out.println(((Magazine) cell).name));

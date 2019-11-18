@@ -1,8 +1,6 @@
 package com.teachmeskill.hometask7.Magazine;
 
-import java.util.Arrays;
-
-public class Book implements Printout {
+public class Book implements Printer {
 
     String name;
 
@@ -15,8 +13,8 @@ public class Book implements Printout {
         System.out.println(name);
     }
 
-    public static void printBooks(Printout[] array) {
-        for (Printout printout : array) {
+    public static void printBooks(Printer[] array) {
+        for (Printer printout : array) {
             if (printout instanceof Book) {
                 Book book = (Book) printout;
                 System.out.println(book.name);

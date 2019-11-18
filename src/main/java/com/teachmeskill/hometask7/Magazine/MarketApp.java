@@ -2,7 +2,7 @@ package com.teachmeskill.hometask7.Magazine;
 
 public class MarketApp  {
     public static void main(String[] args) {
-        Printout [] print = new Printout[]{
+        Printer[] print = new Printer[]{
                  new Book("Misery"),
                  new Magazine("The New York Times")
         };
