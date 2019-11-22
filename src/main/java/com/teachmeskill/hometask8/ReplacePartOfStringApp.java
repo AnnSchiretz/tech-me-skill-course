@@ -7,11 +7,11 @@ public class ReplacePartOfStringApp {
                 "Any Java object that can pass more than one IS-A test is considered to be polymorphic.";
         String regex = "object";
         String replasment = "obj";
-        String myResult = replaseStr(myStr, regex, replasment);
+        String myResult = replaсeStr(myStr, regex, replasment);
         System.out.println("Результат : " + myResult);
     }
 
-    public static String replaseStr(String string, String regex, String replasment) {
+    public static String replaсeStr(String string, String regex, String replasment) {
         System.out.println("Начальная строка : " + string);
         String newResult = string.replaceAll(regex, replasment);
         return newResult;
