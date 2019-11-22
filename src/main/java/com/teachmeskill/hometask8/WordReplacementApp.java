@@ -12,10 +12,10 @@ public class WordReplacementApp {
         String firstUserWord = scan.nextLine();
         System.out.println("Введите второе слово :");
         String secondUserWord = scan.nextLine();
-        char[] myChar = new char[4];
-        firstUserWord.getChars(0, 2, myChar, 0);
-        secondUserWord.getChars(2, 4, myChar, 2);
-        String result = String.valueOf(myChar);
+        char[] charArray = new char[4];
+        firstUserWord.getChars(0, 2, charArray, 0);
+        secondUserWord.getChars(2, 4, charArray, 2);
+        String result = String.valueOf(charArray);
         System.out.println(result);
     }
 //    public static void createWordSeconWay (Scanner scan){

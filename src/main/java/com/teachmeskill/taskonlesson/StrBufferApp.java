@@ -8,15 +8,16 @@ public class StrBufferApp {
         reverse("wait for winter");
 
     }
-    public static void reverse (String string){
+
+    public static void reverse(String string) {
         string.trim();
-        char[] myChar = string.toCharArray();
-        System.out.println(myChar);
-        String[] sArray = new String[myChar.length];
+        char[] charArray = string.toCharArray();
+        System.out.println(charArray);
+        String[] stringArray = new String[charArray.length];
         char j = 1;
-        for (int  i = myChar.length - 1; i >= 0; i --){
-            sArray[i] = String.valueOf(myChar[j]);
-            System.out.print(myChar[i]);
+        for (int i = charArray.length - 1; i >= 0; i--) {
+            stringArray[i] = String.valueOf(charArray[j]);
+            System.out.print(charArray[i]);
         }
     }
 }

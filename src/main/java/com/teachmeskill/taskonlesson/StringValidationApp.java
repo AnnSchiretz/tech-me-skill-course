@@ -9,12 +9,9 @@ public class StringValidationApp {
         String userStr = scan.nextLine();
         userStr = userStr.trim();
         int indexNumber = 0;
-        if(userStr.isEmpty() || indexNumber != -1){
+        if (userStr.isEmpty() || indexNumber != -1) {
             indexNumber = userStr.indexOf("я");
             System.out.println(indexNumber);
         }
-
-
-
     }
 }
