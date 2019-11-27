@@ -39,7 +39,7 @@ public class Market {
                 '}';
     }
 
-    public void addProductInMarket(Product prod) {
+    public void addProduct(Product prod) {
         Product existedProduct = products.stream()
                 .filter(product -> product.getId() == prod.getId())
                 .findFirst()
@@ -52,7 +52,6 @@ public class Market {
 
     public void deleteProduct(Integer idProduct) {
         products.removeIf(product -> product.getId() == idProduct);
-
     }
 
     public void reverseProduct() {
