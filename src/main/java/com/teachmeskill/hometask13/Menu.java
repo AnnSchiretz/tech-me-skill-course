@@ -1,4 +1,5 @@
-import java.util.List;
+package src.main.java.com.teachmeskill.hometask13;
+
 import java.util.Objects;
 
 public class Menu {
@@ -6,7 +7,6 @@ public class Menu {
     private String price;
     private String description;
     private int calories;
-   // private List<Menu> groups;
 
     public Menu(){
 
@@ -50,14 +50,6 @@ public class Menu {
         this.calories = calories;
     }
 
-//    public List<Menu> getGroups() {
-//        return groups;
-//    }
-//
-//    public void setGroups(List<Menu> groups) {
-//        this.groups = groups;
-//    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -81,7 +73,6 @@ public class Menu {
                 ", price='" + price + '\'' +
                 ", description='" + description + '\'' +
                 ", calories=" + calories +
-              //  ", groups=" + groups +
                 '}';
     }
 }
